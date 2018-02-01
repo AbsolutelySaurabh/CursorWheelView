@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C3C4952"
+    tools:context="github.hellocsl.cursorwheellayout.MainActivity">
+
+    <github.hellocsl.cursorwheel.CursorWheelLayout
+        android:id="@+id/test_circle_menu_top"
+        android:layout_width="280dip"
+        android:layout_height="280dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        app:wheelCursorColor="#009688"
+        app:wheelCursorHeight="19dip"
+        app:wheelItemRotateMode="none"
+        app:wheelSelectedAngle="270">
+
+        <ImageView
+            android:id="@id/id_wheel_menu_center_item"
+            style="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Wheel"
+            android:textColor="#009688"
+        />
+    </github.hellocsl.cursorwheel.CursorWheelLayout>
+
+</RelativeLayout>
