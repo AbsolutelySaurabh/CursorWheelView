@@ -6,11 +6,6 @@ import android.view.View;
 
 import github.hellocsl.cursorwheel.CursorWheelLayout;
 import github.hellocsl.cursorwheellayout.R;
-
-/**
- *
- * Created by chensuilun on 16-4-19.
- */
 public class SimpleTextCursorWheelLayout extends CursorWheelLayout {
     public static final int MENU_COUNT = 10;
     public static final int INDEX_SPEC = 9;

@@ -15,9 +15,6 @@ import github.hellocsl.cursorwheel.CursorWheelLayout;
 import github.hellocsl.cursorwheellayout.R;
 import github.hellocsl.cursorwheellayout.data.MenuItemData;
 
-/**
- * Created by chensuilun on 16/4/24.
- */
 public class SimpleTextAdapter extends CursorWheelLayout.CycleWheelAdapter {
     private List<MenuItemData> mMenuItemDatas;
     private LayoutInflater mLayoutInflater;

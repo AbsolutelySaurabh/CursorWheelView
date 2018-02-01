@@ -18,11 +18,6 @@ import android.view.View;
 
 import github.hellocsl.cursorwheellayout.R;
 
-
-/**
- * <p/>
- * Created by chensuilun on 16-4-13.
- */
 public class SwitchButton extends View {
     private static final String TAG = "SwitchButton";
     private static final int PROGRESS_MIN = 0;
