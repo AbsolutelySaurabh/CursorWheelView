@@ -1,125 +1,68 @@
-# CursorWheelLayout
+![screenshot](https://github.com/AbsolutelySaurabh/ShowCube/blob/master/screenshots/collage-2017-11-16.png)
+<h1 align="center">
+    ShowCube
+  <br>
+</h1>
+<h3 align="center">Your one-stop destination to all popular movies, tv shows and nearby theatres.</h3>
+<h4 align="center"> <i>Dedicated to showtime fans!</i></h4>
+<h6 align="center"><a href="https://drive.google.com/uc?export=download&id=1D8xx4FX4onx4rrjow4zWKnjMcFxV3pD8"><img src="https://github.com/AbsolutelySaurabh/CursorWheelView/blob/master/screenshot/WhatsApp Image 2018-02-02 at 00.39.10.jpeg" width="200"></a></h6>
+<p align="center">
+  <a href="https://github.com/AbsolutelySaurabh/CursorWheelView#fork-destination-box">
+    . Contribute .
+  </a>
+</p>
+<br>
 
-CursorWheelLayout is an Android library that allows view to be placed on a rotatable wheel. It behaves like a Circular ListView where items rotate rather than scroll vertically(but without view recycle strategy).
-CursorWheelLayout consists of two components , the center item with id `id_wheel_menu_center_item` and the menu items that provided by CycleWheelAdapter.
+## About CircularWheelView
 
-The CursorWheelLayout can be used as a way to select one item from a list. The `wheelSelectedAngle` attribute determines what position on the wheel is selected.
-You can also receive a callback for when an item is clicked, and whether it is selected. Have a look at the sample for a working example!
-
-## Screenshot
-![1]
-![2]
-## Apk
-
-[Download Demo here](https://github.com/BCsl/CursorWheelLayout/tree/master/demo/wheel-v1.01.apk)
-
-## Setup
-
-### Gradle
-
-`compile 'github.hellocsl:CursorWheelLayout:1.1.0'`
-
-### Maven
-
-```xml
-<dependency>
-  <groupId>github.hellocsl</groupId>
-  <artifactId>CursorWheelLayout</artifactId>
-  <version>1.1.0</version>
-  <type>pom</type>
-</dependency>
-```
-
-## Usage
-1) Add a custom view in Xml
-```xml
-  <github.hellocsl.cursorwheel.CursorWheelLayout
-        android:id="@+id/test_circle_menu_right"
-        android:layout_width="306dip"
-        android:layout_height="306dip"
-        android:layout_gravity="center_vertical|right|bottom"
-        android:layout_marginBottom="-153dp"
-        android:layout_marginRight="-153dip"
-        app:wheelBackgroundColor="@color/colorAccent_Translucent"
-        app:wheelCursorColor="@color/red"
-        app:wheelCursorHeight="20dip"
-        app:wheelFlingValue="460"
-        app:wheelSelectedAngle="225">
-
-        <github.hellocsl.cursorwheellayout.widget.SwitchButton
-            android:id="@id/id_wheel_menu_center_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:boardWidth="0dip"
-            app:uncheckRevealColor="#ff2a2f36"
-        />
-    </github.hellocsl.cursorwheel.CursorWheelLayout>
+```bash
+CircularWheelView lets you form circular wheel of the images from the folders in your galley.
 
 ```
-2) Define your `WheelCycleAdapter`
-```java
-public class SimpleTextAdapter implements CursorWheelLayout.CycleWheelAdapter{
 
-        public int getCount(){
-        //...
-        }
-
-        public View getView(View parent, int position){
-        //...
-        }
-
-        public Object getItem(int position){
-        //...
-        }
-
-}
-```
-3) Set your `WheelCycleAdapter` similar to how you would set an adapter with a ListView
-```java
-        SimpleTextAdapter simpleTextAdapter = new SimpleTextAdapter(this, menuItemDatas);
-        mTestCircleMenuLeft.setAdapter(simpleTextAdapter);
-```
-
-## Listener
-1) A listener for when the closest item to the `SelectionAngle` changes.
-```java
-      mTestCircleMenuTop.setOnMenuSelectedListener(new CursorWheelLayout.OnMenuSelectedListener() {
-            @Override
-            public void onItemSelected(CursorWheelLayout parent, View view, int pos) {
-                Toast.makeText(MainActivity.this, "Top Menu selected position:" + pos, Toast.LENGTH_SHORT).show();
-            }
-        });
-```
-2) A listener for when an item is clicked.
-```java
-        mTestCircleMenuTop.setOnMenuItemClickListener(new CursorWheelLayout.OnMenuItemClickListener() {
-            @Override
-            public void onItemClick(View view, int pos) {
-                Toast.makeText(MainActivity.this, "Top Menu click position:" + pos, Toast.LENGTH_SHORT).show();
-
-            }
-        });
-```
-
-## Useful attributes
- Here are the custom attributes that can be declared in xml:
-  * wheelSelectedAngle
-  * wheelPaddingRadio
-  * wheelCenterRadio
-  * wheelItemRadio
-  * wheelFlingValue
-  * wheelCursorHeight
-  * wheelCursorColor
-  * wheelBackgroundColor
-  * wheelItemRotateMode
-
-
-## Refer to
-http://blog.csdn.net/lmj623565791/article/details/43131133
-
+  
+## Development  
+Want to contribute? **:pencil:**  
+  
+To fix a bug or enhance an existing module, follow these steps:  
+  
+1. Fork the repo
+2. Create a new branch (`git checkout -b exciting-stuff`)
+3. Make the appropriate changes in the files
+4. Add changes to reflect the changes made
+5. Commit your changes (`git commit -am 'exciting-stuff!!'`)
+6. Push to the branch (`git push origin exciting-stuff`)
+7. Create a Pull Request
+  
+  
+## Interested?  
+If you find a bug (the website couldn't handle the query and / or gave irrelevant results), kindly open an issue [here](https://github.com/AbsolutelySaurabh/CursorWheelView/issues/new) by including your search query and the expected result.  
+  
+If you'd like to request a new functionality, feel free to do so by opening an issue [here](https://github.com/AbsolutelySaurabh/CursorWheelView/issues/new) including some sample queries and their corresponding results.
+  
+  
 ## License
-Apache License Version 2.0
-http://apache.org/licenses/LICENSE-2.0.txt
 
-[1]: ./screenshot/gif2.gif
-[2]: ./screenshot/gif3.gif
+```bash
+
+Copyright 2017 Google Inc.
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor
+license agreements. See the NOTICE file distributed with this work for
+additional information regarding copyright ownership. The ASF licenses this
+file to you under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.  
+  ```
+
+---
+
+> GitHub [@AbsolutelySaurabh](https://github.com/AbsolutelySaurabh) &nbsp;&middot;&nbsp;
