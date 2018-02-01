@@ -1,6 +1,5 @@
-![screenshot](https://github.com/AbsolutelySaurabh/ShowCube/blob/master/screenshots/collage-2017-11-16.png)
 <h1 align="center">
-    ShowCube
+    CursorWheelView
   <br>
 </h1>
 <h3 align="center">Your one-stop destination to all popular movies, tv shows and nearby theatres.</h3>
