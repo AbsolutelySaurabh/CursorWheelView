@@ -2,8 +2,8 @@
     CursorWheelView
   <br>
 </h1>
-<h3 align="center">Your one-stop destination to all popular movies, tv shows and nearby theatres.</h3>
-<h4 align="center"> <i>Dedicated to showtime fans!</i></h4>
+<h3 align="center">CircularWheelView lets you form circular wheel of the images from the folders in your galley.
+</h3>
 <h6 align="center"><a href="https://drive.google.com/uc?export=download&id=1D8xx4FX4onx4rrjow4zWKnjMcFxV3pD8"><img src="https://github.com/AbsolutelySaurabh/CursorWheelView/blob/master/screenshot/WhatsApp Image 2018-02-02 at 00.39.10.jpeg" width="200"></a></h6>
 <p align="center">
   <a href="https://github.com/AbsolutelySaurabh/CursorWheelView#fork-destination-box">
